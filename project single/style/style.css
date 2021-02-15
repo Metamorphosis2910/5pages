@@ -1,0 +1,275 @@
+@import 'fonts.css';
+
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+    }
+
+input {
+    outline: none;
+}
+
+/* ******************** */
+/* Root start */
+
+:root {
+    --mm500: 'MM';
+    --mm100: 'MT';
+    --nn400: 'NSR';
+    --rm400: 'RM';
+    --nb700: 'NSB';
+    --dark: #191919;
+    --dark-green: #007d2f;
+    --gray: #f8f9f9;
+    --white: #ffffff;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+/* Root end */
+/* ******************** */
+
+/* Header start */
+
+.links a{
+    font-family: var(--mm500);
+    font-size: 12px;
+    color: var(--dark);
+    text-transform: uppercase;
+}
+
+.links a:hover {
+    color: var(--dark-green);
+    text-decoration: none;
+    transition: color 300ms;
+}
+
+.navigation-link {
+    top: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.nav_icon {
+    margin-right: 5px;
+}
+
+.navigation-link:hover {
+    background: rgba(230, 227, 227, 0.816)
+}
+
+.nav-link a{
+  font-family: var(--mm500);
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--dark);
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+.nav-link a:hover {
+    color: var(--dark-green);
+    background: var(--white);
+}
+
+/* Header end */
+/* ******************** */
+
+/* ******************** */
+/* Main Start */
+
+.left-item {
+    background: var(--gray);
+    width: 100%;
+}
+
+.right-item {
+    width: 100%;
+}
+
+.right-item-img img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.main-mid h2{
+    font-family: var(--mm500);
+    font-size: 30px;
+    color: #171717;
+}
+
+.darkt {
+    color: black;
+    font-family: var(--nb700);
+    font-size: 16px;
+}
+
+.grayt {
+    color: #787878;
+    font-family: var(--nn400);
+    font-size: 16px;
+}
+
+.left_item-content h2 {
+    font-family: var(--mm500);
+    font-size: 38px;
+    color: #171717; 
+}
+
+.left_item-content p {
+    font-family: var(--nn400);
+    font-size: 16px;
+    color: #787878;
+    line-height: 30px;
+}
+
+.main_mid-icons {
+    background: var(--dark-green);
+}
+
+.icon-item1,
+.icon-item2,
+.icon-item3,
+.icon-item4 {
+    padding: 75px 0;
+    max-height: 240px;
+}
+
+.main_mid-icons {
+    background: var(--dark-green);
+}
+
+
+.main_icons-items {
+    justify-content: space-evenly;
+}
+
+.main_icons-items i {
+    font-size: 48px;
+    color: white;
+}
+
+.main_icons-items h2 {
+    font-size: 18px;
+    color: var(--white);
+}
+
+.main_icons-items a {
+    font-size: 12px;
+    color: var(--white);
+    font-family: var(--mm500);
+}
+
+.main_icons-items a:hover {
+    text-decoration: none;
+}
+
+/* Main end */
+/* ******************** */
+
+/* ******************** */
+/* Footer start */
+
+footer {
+    background: black;
+    padding: 50px 0;
+}
+
+.footer_item1 h2 {
+    display: inline-block;
+    font-family: var(--mm500);
+    color: var(--white);
+    font-size: 18px;
+    line-height: 14px;
+    align-self: flex-start;
+}
+
+.footer_item1 p {
+    color: #e4e5da;
+    margin: 0;
+    text-align: justify;
+    font-size: 15px;
+    font-family: none;
+}
+
+.footer_item2 a {
+    color: #e4e5da;
+    text-decoration: none;
+}
+
+.footer_item2,
+.footer_link,
+.footer_link a {
+    color: #e4e5da;
+    text-decoration: none;
+    font-family: var(--nn400);
+}
+
+.footer a:hover {
+    color: gray;
+}
+
+/* Footer end */
+
+
+
+
+
+@media(min-width:992px) and (max-width:9999px) {
+    .main_btn {
+        margin-left: 190px;
+    }
+    .navigation-link {
+        display: none !important;
+    }
+}
+
+@media(min-width:320px) and (max-width:991px) {
+    .links {
+        display: none !important;
+    }
+  }
+
+@media(min-width:320px) and (max-width:991px) {
+    .main-mid {
+        flex-direction: column;
+    }
+}
+
+@media(min-width:320px) and (max-width:768px) {
+    .main-mid {
+        flex-direction: column;
+    }
+    .main_icons-items {
+        justify-content: space-around !important;
+    }
+}
+
+@media(min-width:320px) and (max-width:580px) {    
+   .footer_item1,
+   .footer_item2 {
+       margin-bottom: 50px;
+   }
+    
+   .navbar-brand {
+       align-items: center;
+   }
+
+   .footer {
+       flex-direction: column;
+   }
+}   
